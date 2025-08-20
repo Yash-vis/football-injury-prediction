@@ -2,8 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load('football/injury.pkl')
-feature_names = joblib.load('football/columns.pkl')
+model = joblib.load('injury.pkl')
+feature_names = joblib.load('columns.pkl')
+
 
 if 'Injury_Next_Season' in feature_names:
     feature_names.remove('Injury_Next_Season')
